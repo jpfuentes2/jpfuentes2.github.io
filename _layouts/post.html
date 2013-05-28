@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<article>
+  <header>
+    <h1>
+      {{ page.title }}
+      <time datetime="{{ page.date | page.date_to_xmlschema }}" pubdate>{{ page.date | date: "%B, %Y" }}</time>
+    </h1>
+  </header>
+  {{ content }}
+  <h3>More Essays</h3>
+  {% include posts.html %}
+</article>

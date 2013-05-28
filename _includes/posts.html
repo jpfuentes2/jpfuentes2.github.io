@@ -1,0 +1,11 @@
+<ul class="posts">
+  {% for p in site.posts %}
+    {% if p.title != page.title %}
+      <li>
+        <a href="{{ p.url }}">{{ p.title }}</a>
+        <time datetime="{{ p.date }}" pubdate>{{ p.date | date: "%B, %Y" }}</time>
+        {{ p.excerpt }}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

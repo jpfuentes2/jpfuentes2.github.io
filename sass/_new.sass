@@ -1,0 +1,322 @@
+*
+  box-sizing: border-box !important
+
+html body section
+  height: 100%
+
+html body > section
+  height: auto
+  min-height: 100%
+
+.left
+  float: left
+.right
+  float: right
+
+time
+  display: block
+  text-decoration: none
+  color: $grayLight
+  span
+    color: $grayLight
+    font-size: 18px
+
+article > header
+  padding-bottom: 10px
+
+article
+  padding-bottom: 25px
+  //display: inline-block
+  h1, h2, h3, p, blockquote
+    padding: 0px 20px
+    margin: 25px 0
+  h1
+    padding-bottom: 0
+    margin-bottom: 0
+    font-size: 26px
+    margin-top: 15px
+    line-height: 32px
+  p
+    strong
+      color: $red
+      font-weight: bold
+    em
+      font-style: italic
+
+blockquote
+  border-left: 5px solid $red
+  margin-left: 20px
+  padding: 0
+
+figure.code
+  width: 100%
+  table
+    width: 100%
+    td
+      margin: 0
+      padding: 0
+      display: inline
+    .line-numbers
+      display: none
+pre
+  margin: 0
+  +border-radius(0px)
+  border: none
+  background: $grayLighter + 8
+  padding: 10px 20px
+
+body > header
+  text-align: center
+  display: block
+  position: relative
+  width: 100%
+  max-width: 100%
+  float: none
+  text-align: center
+  // TODO: set this margin in base
+  margin-top: 20px
+  a
+    text-decoration: none
+  figure.logo
+    position: relative
+    height: 100px
+    width: 100px
+    display: block
+    +box-shadow(inset 0px 3px 8px darken($red, 15))
+    +border-radius(50px)
+    background-color: $red
+    margin: 0 auto
+    left: auto
+    right: auto
+    cursor: pointer
+    &:hover
+      a
+        font-weight: bold
+        color: $red
+    a
+      display: inline-block
+      margin-top: 43px
+      margin-left: 2px
+      color: white
+      font-size: 72px
+      +text-shadow(0px 3px 8px $grayDark)
+  hgroup
+    max-width: 70%
+    width: auto
+    margin: 0 auto
+    $h1-font: 26px
+    h1
+      font-size: $h1-font
+      font-weight: normal
+      color: $grayLight
+      a:hover
+        font-weight: normal
+    h3 p
+      font-family: $bodyFont
+      font-weight: normal
+      line-height: $font-size
+      font-size: $font-size - 2
+  nav
+    background: $grayLighter + 8
+    padding: 10px 0
+    +box-shadow(inset 0px 0px 1px darken($red, 15))
+    ul
+      margin: 0
+      li
+        display: inline-block
+    a
+      display: block
+      text-transform: none
+      color: $red
+      margin: 0 10px
+      span
+        font-size: 16px
+
+a
+  color: $offBlack
+  +transition(color 0.2s ease-in-out)
+  text-decoration: none
+  &:hover
+    color: $red
+    font-weight: 600
+
+section
+  padding-top: 25px
+  margin: 0 auto
+  article
+    p a
+      border-bottom: 1px solid $red
+      color: $red
+    blockquote a
+      border-bottom: none
+    h1 time
+      line-height: 16px
+      font-size: 14px
+    h2
+      font-size: 20px
+  .posts-spacer
+    margin-top: 25px
+  ul.posts
+    list-style: none
+    margin: 0
+    padding: 0
+    +indent-content
+    margin-bottom: 0
+    padding-bottom: 0
+    li
+      margin: 0
+      padding: 0
+      a
+        color: $red
+        border-bottom: 1px solid $red
+      p
+        padding-left: 10px
+        line-height: 24px
+        font-size: 18px
+      time
+        display: inline
+        font-size: 14px
+
+body > footer
+  background: $grayLighter + 8
+  position: relative
+  z-index: 10
+  clear: both
+  bottom: 0
+  width: 100%
+  padding: 5px 20px
+  font-family: $headerFont
+  //+box-shadow(0px 1px 6px darken($red, 15))
+  p
+    color: $grayLight
+    font-size: $font-size / 1.5
+    padding: 0
+    display: inline
+  a
+    color: $red
+  figure
+    display: inline
+    position: relative
+    top: 2px
+
+section article footer
+  padding-bottom: 10px
+  display: block
+  +clearfix
+  p.meta a
+    max-width: 120px
+    border-bottom: none
+  p.meta span.right, span.left
+    border-bottom: none
+    color: $red
+
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+@media only screen and (min-width: 750px)
+  body > header
+    display: block
+    padding: 0px 25px
+    width: 26%
+    margin-top: 0
+    height: 100%
+    position: fixed
+    float: left
+    figure
+      position: relative
+      top: 25px
+    .divider
+      position: absolute
+      float: right
+      right: 0
+      height: 100%
+      background: $grayLighter + 8
+      width: 5px
+    hgroup
+      margin-top: 25px
+      float: left
+      width: 100%
+      max-width: 100%
+      text-align: center
+    nav
+      +box-shadow(none)
+      background: white
+      ul li
+        margin: 0
+        line-height: $font-size + 6
+  section
+    display: block
+    float: left
+    margin-left: 26%
+    width: 74%
+    h1 time
+      margin-top: 8px
+      font-size: 14px
+    h1, h2, h3, p, blockquote, ul.posts
+      padding: 0px 50px
+      max-width: 700px
+      width: auto
+      padding-bottom: 5px
+    blockquote
+      margin-left: 50px
+      padding: 0
+      p
+        max-width: 575px
+        margin-left: 15px
+        padding: 0
+    article footer p.meta a
+      max-width: 50%
+  body > footer
+    padding-left: 40px
+    +box-shadow(none)
+    position: fixed
+    bottom: 0
+    width: 26%
+  pre
+    padding: 10px 50px
+
+p.note
+  margin-top: 5px
+  font-weight: normal
+
+// CODE / PRETTIFY
+
+.com
+  color: #93a1a1
+
+.lit
+  color: #195f91
+
+.pun, .opn, .clo
+  color: #93a1a1
+
+.fun
+  color: #dc322f
+
+.str, .atv
+  color: #D14
+
+.kwd, .prettyprint .tag
+  color: #1e347b
+
+.typ, .atn, .dec, .var
+  color: teal
+
+.pln
+  color: #48484c
+
+.prettyprint
+  &.linenums
+    -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0
+    -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0
+    box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0
+
+/* Specify class=linenums on a pre to get line numbering
+
+*::selection, small::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection
+  background: $red
+  color: white
+
+@media only screen and (min-width: 750px) and (max-width: 830px)
+  body > footer p
+    font-size: $font-size - 10

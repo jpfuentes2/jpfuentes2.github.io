@@ -1,0 +1,14 @@
+name: Jacques Fuentes
+pygments: true
+markdown: rdiscount
+markdown_ext: markdown,md
+rdiscount:
+  extensions: [smart]
+timezone: America/New_York
+port: 9292
+excerpt_separator: "\n"
+paginate: 5
+exclude:
+  - sass
+  - .sass-cache
+  - Procfile
