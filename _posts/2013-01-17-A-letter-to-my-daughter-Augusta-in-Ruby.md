@@ -6,7 +6,7 @@ categories: essays
 published: true
 ---
 
-I wanted to creatively express my affection for my daughter, Augusta, in a way I know best. I chose programmng language Ruby for its flexibility and elegance. My hope is to introduce her to its boundless beauty someday soon using this composition.
+I wanted to creatively express my affection for my daughter, Augusta, in a way I know best. I chose the programmng language Ruby for its flexibility and elegance. My hope is to introduce her to its boundless beauty someday soon using this composition.
 
 ![The Letter](http://media.tumblr.com/c316fd81f261ce30d20e1ab3c750f6b5/tumblr_inline_mg9ptrCXQh1rdwud0.png)
 
