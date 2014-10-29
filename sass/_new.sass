@@ -1,3 +1,5 @@
+@import "compass/css3/border-radius"
+
 *
   box-sizing: border-box !important
 
@@ -16,9 +18,9 @@ html body > section
 time
   display: block
   text-decoration: none
-  color: $grayLight
+  color: $gray-light
   span
-    color: $grayLight
+    color: $gray-light
     font-size: 18px
 
 article > header
@@ -65,7 +67,7 @@ pre
   margin: 0
   +border-radius(0px)
   border: none
-  background: $grayLighter + 8
+  background: $gray-lighter + 8
   padding: 10px 20px
 
 body > header
@@ -85,9 +87,6 @@ body > header
     height: 100px
     width: 100px
     display: block
-    +box-shadow(inset 0px 3px 8px darken($red, 15))
-    +border-radius(50px)
-    background-color: $red
     margin: 0 auto
     left: auto
     right: auto
@@ -98,12 +97,12 @@ body > header
         color: $red
     a
       display: inline-block
-      margin-top: 46px
-      margin-left: 2px
+      //margin-top: 46px
+      //margin-left: 2px
       color: white
       font-size: 82px
       font-weight: 600
-      +text-shadow(0px 3px 8px $grayDark)
+      +text-shadow(0px 3px 8px $gray-dark)
   hgroup
     max-width: 75%
     width: auto
@@ -112,7 +111,7 @@ body > header
     h1
       font-size: $h1-font
       font-weight: normal
-      color: $grayLight
+      color: $gray-light
       a:hover
         font-weight: normal
     h3 p
@@ -121,7 +120,7 @@ body > header
       line-height: $font-size
       font-size: $font-size - 2
   nav
-    background: $grayLighter + 8
+    background: $gray-lighter + 8
     padding: 10px 0
     +box-shadow(inset 0px 0px 1px darken($red, 15))
     ul
@@ -182,7 +181,7 @@ section
         font-size: 14px
 
 body > footer
-  background: $grayLighter + 8
+  background: $gray-lighter + 8
   position: relative
   z-index: 10
   clear: both
@@ -192,7 +191,7 @@ body > footer
   font-family: $headerFont
   //+box-shadow(0px 1px 6px darken($red, 15))
   p
-    color: $grayLight
+    color: $gray-light
     font-size: $font-size / 1.5
     padding: 0
     display: inline
@@ -236,7 +235,7 @@ section article footer
       float: right
       right: 0
       height: 100%
-      background: $grayLighter + 8
+      background: $gray-lighter + 8
       width: 5px
     hgroup
       margin-top: 25px
