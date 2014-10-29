@@ -1,5 +1,5 @@
 name: Jacques Fuentes
-pygments: true
+highlighter: rouge
 markdown: rdiscount
 markdown_ext: markdown,md
 rdiscount:
