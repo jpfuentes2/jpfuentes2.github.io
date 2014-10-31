@@ -12,38 +12,9 @@ body
   font-size: $font-size
   font-family: $bodyFont
   line-height: 24px
-  font-weight: 600
   color: $offBlack
-
-a
-  color: $offBlack
-  +transition(color 0.2s ease-in-out)
-  &:hover
-    color: $red
-    text-decoration: none
 
 small
   font-size: 75%
-
-//body.books
-  section
-    .content
-      max-width: 100%
-      padding: 50px 15px
-      .gr_grid_container
-        width: 100%
-      h2
-        display: none
-      a.gr_grid_branding
-        float: left !important
-      .gr_grid_book_container
-        padding: 5px
-        float: left
-        width: 98px
-        height: 160px
-        overflow: hidden
-        img
-          +border-radius(3px)
-          +box-shadow(-2px 2px 3px $grayLight)
 
 @import "new"

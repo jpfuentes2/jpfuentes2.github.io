@@ -4,9 +4,6 @@
   box-sizing: border-box !important
 
 html body section
-  height: 100%
-
-html body > section
   height: auto
   min-height: 100%
 
@@ -23,30 +20,33 @@ time
     color: $gray-light
     font-size: 18px
 
-article > header
-  padding-bottom: 10px
-
-article
-  padding-bottom: 25px
-  //display: inline-block
-  h1, h2, h3, p, blockquote
-    padding: 0px 20px
-    margin: 25px 0
-  h1
-    padding-bottom: 0
-    margin-bottom: 0
-    font-size: 26px
-    margin-top: 15px
-    line-height: 32px
-  p
-    strong
-      color: $red
-      font-weight: bold
-    em
-      font-style: italic
-    img
-      overflow: auto
-      max-width: 100%
+section
+  max-width: 68em
+  width: 65.88%
+  margin-left: 17.05%
+  article
+    > header
+      padding-bottom: 10px
+      h1
+        padding-bottom: 0
+        margin-bottom: 0
+        font-size: 26px
+        margin-top: 15px
+        line-height: 32px
+        text-align: center
+    padding-bottom: 25px
+    h1, h2, h3, p, blockquote
+      padding: 0px 20px
+      margin: 25px 0
+    p
+      strong
+        color: $red
+        font-weight: bold
+      em
+        font-style: italic
+      img
+        overflow: auto
+        max-width: 100%
 
 blockquote
   border-left: 5px solid $red
@@ -81,8 +81,7 @@ body > header
   max-width: 100%
   float: none
   text-align: center
-  // TODO: set this margin in base
-  margin-top: 20px
+  padding-top: 25px
   a
     text-decoration: none
   figure.logo
@@ -94,10 +93,6 @@ body > header
     left: auto
     right: auto
     cursor: pointer
-    &:hover
-      a
-        font-weight: bold
-        color: $red
     a
       display: inline-block
       //margin-top: 46px
@@ -110,6 +105,7 @@ body > header
     max-width: 75%
     width: auto
     margin: 0 auto
+    padding: 10px 0
     $h1-font: 26px
     h1
       font-size: $h1-font
@@ -139,17 +135,16 @@ body > header
       span
         font-size: 16px
 
-a
-  color: $offBlack
-  +transition(color 0.2s ease-in-out)
-  text-decoration: none
-  &:hover
-    color: $red
-    font-weight: 600
-
 section
   padding-top: 25px
   margin: 0 auto
+  a
+    color: $offBlack
+    +transition(color 0.2s ease-in-out)
+    border-bottom: 1px solid $red
+    text-decoration: none
+    &:hover
+      color: $red
   article
     p a
       border-bottom: 1px solid $red
@@ -173,9 +168,6 @@ section
     li
       margin: 0
       padding: 0
-      a
-        color: $red
-        border-bottom: 1px solid $red
       p
         padding-left: 10px
         line-height: 24px
@@ -186,27 +178,26 @@ section
 
 body > footer
   background: $gray-lighter + 8
-  position: relative
   z-index: 10
   clear: both
   bottom: 0
   width: 100%
   padding: 5px 20px
   font-family: $headerFont
-  //+box-shadow(0px 1px 6px darken($red, 15))
+  text-align: center
+  font-weight: 600
   p
     color: $gray-light
     font-size: $font-size / 1.5
     padding: 0
     display: inline
-  a
-    color: $red
   figure
     display: inline
     position: relative
     top: 2px
-    a
-      font-family: Helvetica
+    border-bottom: none
+    color: $red
+    font-family: Helvetica
 
 section article footer
   padding-bottom: 10px
@@ -218,52 +209,21 @@ section article footer
   p.meta span.right, span.left
     border-bottom: none
     color: $red
+@media all and (max-width: 60em)
+  body section
+    width: 95%
 
-//
-// Responsive: Landscape phone to desktop/tablet
-// --------------------------------------------------
-@media only screen and (min-width: 750px)
+@media all and (min-width: 50em)
   body > header
     display: block
-    padding: 0px 25px
-    width: 26%
-    margin-top: 0
     height: 100%
-    position: fixed
-    float: left
-    figure
-      position: relative
-      top: 25px
-    .divider
-      position: absolute
-      float: right
-      right: 0
-      height: 100%
-      background: $gray-lighter + 8
-      width: 5px
-    hgroup
-      margin-top: 25px
-      float: left
-      width: 100%
-      max-width: 100%
-      text-align: center
-    nav
-      +box-shadow(none)
-      background: white
-      ul li
-        margin: 0
-        line-height: $font-size + 6
   section
     display: block
-    float: left
-    margin-left: 26%
-    width: 74%
     h1 time
       margin-top: 8px
       font-size: 14px
     h1, h2, h3, p, blockquote, ul.posts
       padding: 0px 50px
-      max-width: 700px
       width: auto
       padding-bottom: 5px
     blockquote
@@ -276,43 +236,13 @@ section article footer
     article footer p.meta a
       max-width: 50%
   body > footer
-    padding-left: 40px
-    +box-shadow(none)
-    position: fixed
     bottom: 0
-    width: 26%
   pre
     padding: 10px 50px
 
 p.note
   margin-top: 5px
   font-weight: normal
-
-// CODE / PRETTIFY
-
-.com
-  color: #93a1a1
-
-.lit
-  color: #195f91
-
-.pun, .opn, .clo
-  color: #93a1a1
-
-.fun
-  color: #dc322f
-
-.str, .atv
-  color: #D14
-
-.kwd, .prettyprint .tag
-  color: #1e347b
-
-.typ, .atn, .dec, .var
-  color: teal
-
-.pln
-  color: #48484c
 
 .prettyprint
   &.linenums
