@@ -3,9 +3,11 @@
 *
   box-sizing: border-box !important
 
-html body section
-  height: auto
+html
+  position: relative
   min-height: 100%
+  body section
+    height: auto
 
 .left
   float: left
@@ -136,7 +138,7 @@ body > header
         font-size: 16px
 
 section
-  padding-top: 25px
+  padding: 25px 0
   margin: 0 auto
   a
     color: $offBlack
@@ -178,8 +180,8 @@ section
 
 body > footer
   background: $gray-lighter + 8
-  z-index: 10
-  clear: both
+  position: absolute
+  left: 0
   bottom: 0
   width: 100%
   padding: 5px 20px
