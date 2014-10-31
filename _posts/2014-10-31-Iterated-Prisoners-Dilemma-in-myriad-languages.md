@@ -18,7 +18,7 @@ Alas, I was not in a position to write production Clojure so my experiments were
 Shortly afterwards, [Go](http://golang.org/) grabbed my attention since I'd never used static types and was enthralled by its concurrency primitives.
 Even with the headache of static typing, I rapidly became productive
 due to Go's fantastic stdlib and its plethora of powerful tools.
-More importantly, I discovered static typing was not a headache, did not slow my design process; instead, it was a *productivity multiplier*.
+More importantly, I discovered static typing was not a headache and did not slow my design process; instead, it was a *productivity multiplier*.
 To my amazement, I could brutally refactor programs quickly with the help of Go's compiler + static typing, and, sweet baby Jesus, powerful tab completion[[0]](#java-note)!
 
 One of my favorite insights learning Go: it eradicated much of my ignorance related to static typing.
@@ -54,4 +54,5 @@ Currently, I have examples in Scala, Clojure, Haskell, Ruby, and Go. A buddy of 
 </p>
 
 #### Thanks
-Thanks to Daniel Farrell and 
+
+Thanks to [Bob Larrick](https://github.com/deathbob) and [Daniel Farrell](https://github.com/danielfarrell) for reviewing this essay.
