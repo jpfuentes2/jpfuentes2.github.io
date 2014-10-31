@@ -16,8 +16,8 @@ It was challenging, fun, and enlightening even though I have yet to achieve inte
 Alas, I was not in a position to write production Clojure so my experiments were primarily edifying and entertaining.
 
 Shortly afterwards, [Go](http://golang.org/) grabbed my attention since I'd never used static types and was enthralled by its concurrency primitives.
-Even with the *headache* of static typing, I rapidly became productive at a pace unparallel to other languages in my toolbox.
-Partly due to Go's fantastic stdlib and its plethora of powerful tools.
+Even with the *headache* of static typing, I rapidly became productive
+at a pace unparallel to other languages in my toolbox, partly due to Go's fantastic stdlib and its plethora of powerful tools.
 More importantly, I discovered static typing was not a headache, did not slow my design process; instead, it was a *productivity multiplier*.
 To my amazement, I could brutally refactor programs quickly with the help of Go's compiler + static typing, and, sweet baby Jesus, powerful tab completion[[0]](#java-note)!
 
@@ -38,7 +38,7 @@ Even though I'm, at best, a novice in Scala (it's a complex and broad language),
 Equipped with a strong understanding of various concepts I'd meet in Haskell already found in Scala/Clojure, I knew the giant wall my head would invariably smash into was not as imminent prior to learning these languages.
 On a scale of 1 to 10, where 1 is "able to write basic programs" in Haskell and 10 is being [Simon Peyton Jones](http://research.microsoft.com/en-us/people/simonpj/) or [John Marlow](http://community.haskell.org/~simonmar/), I'm currently a -2.
 It's okay; Haskell has sparked new interests in category theory, type systems, purely functional languages, and dependent typing.
-And, that's all that matters: educating myself through challenging my status quo means I might be at a 2 in Haskell in *five* years.
+And, that's all that matters: educating myself through challenging my status quo means I might be at a 2 in *five* years.
 
 Throughout my journey, I have implemented the same algorithm, the [Iterated Prisoner's Dilemma](http://en.wikipedia.org/wiki/Prisoner%27s_dilemma#The_iterated_prisoners.27_dilemma), problem in each language as a means to compare and contrast their styles.
 This exercise has helped my goal of writing idiomatic code in and reinforces my understanding of how problems are approached in each language.
