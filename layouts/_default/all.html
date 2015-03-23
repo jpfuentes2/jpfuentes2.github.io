@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
+    <title>Jacques Fuentes{{if ne .Title ""}} | {{ .Title }}{{end}}</title>
     <meta name="viewport" content="width=device-width">
     <!-- syntax highlighting CSS -->
+    <link rel="canonical" href="{{ .Permalink }}">
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/screen.css">
     <link href='http://fonts.googleapis.com/css?family=Stoke|Josefin+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
+    <link href="/rss.xml" type="application/atom+xml" rel="alternate" title="{{ .Site.Title }}">
   </head>
   <body>
     <script>
@@ -78,14 +80,34 @@
         <ul>
           <li><a href="/">essays</a></li>
           <li><a href="https://github.com/jpfuentes2">code</a></li>
-          <li><a href="https://twitter.com">twitter</a></li>
+          <li><a href="https://twitter.com/jpfuentes2">twitter</a></li>
           <li><a href="/about.html">about</a></li>
         </ul>
       </nav>
     </header>
+    {{ if .IsPage }}
     <section>
-      {{ content }}
+      <article>
+        <header>
+          <h1>
+            {{ .Title }}
+            <time datetime="{{ .Date }}" pubdate>{{ .Date.Format "January, 2006" }}</time>
+          </h1>
+        </header>
+        {{ .Content }}
+        <!--<h3>More Essays</h3>-->
+        {{/* template "_default/list.html" . */}}
+      </article>
     </section>
+    {{ else }}
+    <section>
+      <article>
+        <header>
+          <h1>Essays</h1>
+          {{ template "_default/list.html" . }}
+        </header>
+    </section>
+    {{ end }}
     <footer>
       <figure class="logo">
         &lambda;

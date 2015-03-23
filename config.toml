@@ -1,0 +1,15 @@
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+baseurl = "https://jacquesfuentes.com"
+canonifyurls = true
+pygmentsuseclasses = true
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  # description = "Tesla's Awesome Hugo Site"
+  author = "Jacques Fuentes"
