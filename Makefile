@@ -1,10 +1,19 @@
 build:
 	hugo --source=./
 
+clean:
+	git clean -fd ./public
+
+deploy: clean build
+	git add ./public
+	git commit -m "Deploying new public build"
+	git push origin blog
+	git subtree push --prefix=public git@github.com:jpfuentes2/jpfuentes2.github.io.git master
+
 sass:
 	compass watch --config sass/compass.rb
 
 server:
 	hugo server --watch --source=./
 
-.PHONY: build sass server
+.PHONY: clean build deploy sass server
