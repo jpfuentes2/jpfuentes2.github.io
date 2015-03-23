@@ -5,8 +5,6 @@ clean:
 	git clean -fd ./public
 
 deploy: clean build
-	git add ./public
-	git commit -m "Deploying new public build"
 	git subtree push --prefix=public git@github.com:jpfuentes2/jpfuentes2.github.io.git master
 
 sass:
