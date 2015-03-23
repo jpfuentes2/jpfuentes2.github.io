@@ -1,0 +1,11 @@
+          <div class="posts-spacer">
+            <ul class="posts">
+              {{ range .Data.Pages }}
+                <li>
+                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <time datetime="{{ .Date }}" pubdate>{{ .Date.Format "January, 2006" }}</time>
+                  <p>{{ .Summary }}</p>
+                </li>
+              {{ end }}
+             </ul>
+          </div>

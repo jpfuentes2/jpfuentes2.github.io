@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>{{ page.title }}</title>
+    <title>Jacques Fuentes</title>
     <meta name="viewport" content="width=device-width">
-    <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/css/syntax.css">
-    <link rel="stylesheet" href="/css/screen.css">
+    
+    <link rel="canonical" href="http://localhost:1313/">
+    <link rel="stylesheet" href="http://localhost:1313/css/syntax.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/screen.css">
     <link href='http://fonts.googleapis.com/css?family=Stoke|Josefin+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
+    <link href="http://localhost:1313/rss.xml" type="application/atom+xml" rel="alternate" title="">
   </head>
   <body>
     <script>
@@ -22,9 +24,9 @@
     </script>
     <header>
       <figure class="logo">
-        <a href="/">
+        <a href="http://localhost:1313/">
           <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-              <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+              
               <title>icon_100x100</title>
               <desc>Created with Sketch.</desc>
               <defs>
@@ -71,26 +73,68 @@
         </a>
       </figure>
       <hgroup>
-        <h1><a href="/">Jacques Fuentes</a></h1>
+        <h1><a href="http://localhost:1313/">Jacques Fuentes</a></h1>
         <h3><p>I love to learn, create, read, and marvel at the beauty of life.</p></h3>
       </hgroup>
       <nav>
         <ul>
-          <li><a href="/">essays</a></li>
+          <li><a href="http://localhost:1313/">essays</a></li>
           <li><a href="https://github.com/jpfuentes2">code</a></li>
-          <li><a href="https://twitter.com">twitter</a></li>
-          <li><a href="/about.html">about</a></li>
+          <li><a href="https://twitter.com/jpfuentes2">twitter</a></li>
+          <li><a href="http://localhost:1313/about.html">about</a></li>
         </ul>
       </nav>
     </header>
+    
     <section>
-      {{ content }}
+      <article>
+        <header>
+          <h1>Essays</h1>
+                    <div class="posts-spacer">
+            <ul class="posts">
+              
+                <li>
+                  <a href="http://localhost:1313/2014/10/iterated-prisoners-dilemma-in-myriad-languages">Iterated Prisoner&#39;s Dilemma in myriad languages</a>
+                  <time datetime="2014-10-31 00:00:00 &#43;0000 UTC" pubdate>October, 2014</time>
+                  <p><p><small>
+tl;dr see the code <a href="https://github.com/jpfuentes2/iterated-prisoners-dilemma">here</a>.
+</small></p>
+
+<p>Around two years ago I began reading about functional programming and quickly became fascinated.
+I dove into <a href="http://clojure.org/">Clojure</a> given its emphasis on FP, dynamic typing, and Lisp origins.</p>
+</p>
+                </li>
+              
+                <li>
+                  <a href="http://localhost:1313/2013/01/a-letter-to-my-daughter-augusta-in-ruby">A letter to my daughter, Augusta, in Ruby</a>
+                  <time datetime="2013-01-17 00:00:00 &#43;0000 UTC" pubdate>January, 2013</time>
+                  <p><p>I wanted to creatively express my affection for my daughter, Augusta, in a way I know best. I chose the programmng language Ruby for its flexibility and elegance. My hope is to introduce her to its boundless beauty someday soon using this composition.</p>
+</p>
+                </li>
+              
+                <li>
+                  <a href="http://localhost:1313/2012/09/select-all-images-in-google-plus-instant-upload">Select all images in Google&#43; instant upload</a>
+                  <time datetime="2012-09-15 00:00:00 &#43;0000 UTC" pubdate>September, 2012</time>
+                  <p><p>If you&rsquo;re like me and use Google+ instant upload on your mobile device as a free image repository, then you&rsquo;re going to need a good way to move them around.</p>
+</p>
+                </li>
+              
+             </ul>
+          </div>
+
+        </header>
     </section>
+    
     <footer>
       <figure class="logo">
         &lambda;
       </figure>
       <p><span class="author">Jacques Fuentes</span></p>
     </footer>
-  </body>
+  <script>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
+
+

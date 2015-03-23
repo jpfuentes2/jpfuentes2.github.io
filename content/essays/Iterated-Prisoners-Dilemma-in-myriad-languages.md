@@ -1,9 +1,6 @@
 ---
-excerpt: "<p>Throughout my journey, I have implemented the same algorithm, the Iterated Prisoner's Dilemma, in each language as a means to compare and contrast their styles. This exercise has helped me write idiomatic code in and reinforces my understanding of how problems are approached in each language.</p>"
-layout: post
 title: "Iterated Prisoner's Dilemma in myriad languages"
-date: 2014-10-31 08:00
-categories: essays
+date: 2014-10-31
 published: true
 tags:
   - programming
@@ -15,6 +12,7 @@ tl;dr see the code [here](https://github.com/jpfuentes2/iterated-prisoners-dilem
 
 Around two years ago I began reading about functional programming and quickly became fascinated.
 I dove into [Clojure](http://clojure.org/) given its emphasis on FP, dynamic typing, and Lisp origins.
+<!--more-->
 Why Lisp with its `)))))))` everywhere? Paul Graham convincingly argues for its power in ["Beating the Averages."](http://www.paulgraham.com/avg.html)
 Of course, coming from PHP *->* JavaScript *->* Ruby, it was natural to pick another dynamic language.
 It was challenging, fun, and enlightening even though I have yet to achieve intermediate proficiency.

@@ -1,0 +1,6 @@
+---
+tags:
+  - x
+categories:
+  - y
+---
