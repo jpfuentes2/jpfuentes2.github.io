@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essays on </title>
+    <link>http://localhost:1313/categories/essays/</link>
+    <description>Recent content in Essays on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 17 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/essays/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A letter to my daughter, Augusta, in Ruby</title>
+      <link>http://localhost:1313/essays/A-letter-to-my-daughter-Augusta-in-Ruby/</link>
+      <pubDate>Thu, 17 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/essays/A-letter-to-my-daughter-Augusta-in-Ruby/</guid>
+      <description>&lt;p&gt;I wanted to creatively express my affection for my daughter, Augusta, in a way I know best. I chose the programmng language Ruby for its flexibility and elegance. My hope is to introduce her to its boundless beauty someday soon using this composition.&lt;/p&gt;
+
+&lt;p&gt;{% highlight ruby %}
+require &amp;ldquo;./love&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;a_letter to: Augusta do
+  twas(only: 16.months.ago) { The::Universe &amp;lt;&amp;lt; You.to(OurFamily) }
+  life.has :been =&amp;gt; %w(i n c r e d i b l y).zip(*&amp;ldquo;wonderful!&amp;rdquo;).ever_since
+  We::Wish.we_could { experience these_moments: over &amp;amp; over }
+  You.will always_be: Loved, and: Cherished
+  until Infinity.ends do; Forever.(); end
+end
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;This is a real, working, program which outputs &amp;ldquo;Augusta, we &amp;lt;3 you!&amp;rdquo; when executed. Be sure to read the &lt;a href=&#34;https://github.com/jpfuentes2/a-letter-to-Augusta/blob/master/love.rb&#34;&gt;love.rb&lt;/a&gt; file below which supports the letter’s syntax. I tried to keep it symmetrical and legible so that the source closely resembles the letter’s content.&lt;/p&gt;
+
+&lt;p&gt;{% highlight ruby %}
+Augusta = Awesome = true and Loved = Cherished = true&lt;/p&gt;
+
+&lt;p&gt;Infinity = (+1.0 / 0)..(-1.0 / 0)
+def Infinity.ends; false; end
+Forever = -&amp;gt; { puts &amp;ldquo;Augusta, we \033[31m&amp;lt;3\033[0m you!&amp;ldquo;; sleep 5 }
+Incredible = :wunderbar!
+%w(We The).map { |const| self.class.const_set const, Module.new do; end }
+OurFamily = :the_number_one_most_important_thing # not breakfast&lt;/p&gt;
+
+&lt;p&gt;def a_letter(*to); yield Augusta; end&lt;/p&gt;
+
+&lt;p&gt;class Numeric
+  def method_missing(*); instance_eval { self }; end
+end&lt;/p&gt;
+
+&lt;p&gt;def twas(as_if_it_were = {}, &amp;amp;re)
+  memories = as_if_it_were.fetch :only, 1.day.ago
+  re.call memories
+end&lt;/p&gt;
+
+&lt;p&gt;class You
+  class &amp;lt;&amp;lt; self
+    def will(always_be_loved); end
+    def to(us = OurFamily); end
+  end
+end&lt;/p&gt;
+
+&lt;p&gt;class The::Universe &amp;lt; Infinity.class
+  def self.&amp;lt;&amp;lt;(you); end
+end&lt;/p&gt;
+
+&lt;p&gt;def life
+  Class.new do
+    def self.has(since); since.fetch :been, Incredible; end
+  end
+end&lt;/p&gt;
+
+&lt;p&gt;class Array
+  def ever_since; end
+end&lt;/p&gt;
+
+&lt;p&gt;class String
+  def each; self.chars; end
+end&lt;/p&gt;
+
+&lt;p&gt;module We
+  class Wish
+    def self.we_could(&amp;amp;blk)
+      klass = Module.new do
+        def self.experience(these_moments_for); Infinity; end
+      end.instance_eval &amp;amp;blk
+    end
+  end
+end&lt;/p&gt;
+
+&lt;p&gt;def over(and_over = Infinity); end&lt;/p&gt;
+
+&lt;p&gt;trap :INT, :IGNORE # Forever and ever!
+{% endhighlight %}&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

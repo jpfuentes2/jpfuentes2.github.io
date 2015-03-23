@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2014-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/essays/Iterated-Prisoners-Dilemma-in-myriad-languages/</loc>
+    <lastmod>2014-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/essays/A-letter-to-my-daughter-Augusta-in-Ruby/</loc>
+    <lastmod>2013-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/essays/select-all-images-in-google-plus-instant-upload/</loc>
+    <lastmod>2012-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>
