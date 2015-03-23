@@ -6,6 +6,9 @@ baseurl = "http://jacquesfuentes.com"
 canonifyurls = true
 pygmentsuseclasses = true
 
+[permalinks]
+  essays = "/:year/:month/:filename/"
+
 [taxonomies]
   category = "categories"
   tag = "tags"
