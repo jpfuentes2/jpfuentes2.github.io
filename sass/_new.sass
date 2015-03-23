@@ -75,7 +75,7 @@ pre
   background: $gray-lighter + 8
   padding: 10px 20px
 
-body > header
+#masthead
   text-align: center
   display: block
   position: relative
@@ -86,7 +86,7 @@ body > header
   padding-top: 25px
   a
     text-decoration: none
-  figure.logo
+  .logo
     position: relative
     height: 100px
     width: 100px
@@ -103,19 +103,14 @@ body > header
       font-size: 82px
       font-weight: 600
       +text-shadow(0px 3px 8px $gray-dark)
-  hgroup
+  div
     max-width: 75%
     width: auto
     margin: 0 auto
     padding: 10px 0
     $h1-font: 26px
-    h1
-      font-size: $h1-font
-      font-weight: normal
-      color: $gray-light
-      a:hover
-        font-weight: normal
-    h3 p
+    p
+      margin-top: 20px
       font-family: $bodyFont
       font-weight: normal
       line-height: $font-size
@@ -193,7 +188,7 @@ body > footer
     font-size: $font-size / 1.5
     padding: 0
     display: inline
-  figure
+  .logo
     display: inline
     position: relative
     top: 2px
@@ -216,7 +211,7 @@ section article footer
     width: 95%
 
 @media all and (min-width: 50em)
-  body > header
+  #masthead
     display: block
     height: 100%
   section

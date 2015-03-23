@@ -1,0 +1,47 @@
+<a href="/" class="logo">
+  <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+      <title>icon_100x100</title>
+      <desc>Created with Sketch.</desc>
+      <defs>
+          <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="151.391163%" id="radialGradient-1">
+              <stop stop-color="#5C1611" stop-opacity="0" offset="0%"></stop>
+              <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+          </radialGradient>
+          <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+              <feMorphology radius="2" in="SourceAlpha" operator="dilate" result="shadowSpreadInner1"></feMorphology>
+              <feOffset dx="1" dy="2" in="shadowSpreadInner1" result="shadowOffsetInner1"></feOffset>
+              <feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+              <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+              <feColorMatrix values="0 0 0 0 0.360784314   0 0 0 0 0.0862745098   0 0 0 0 0.0666666667  0 0 0 0.379562953 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+              <feMerge>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+                  <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+              </feMerge>
+          </filter>
+          <circle id="path-3" cx="49.5117188" cy="49.5117188" r="49.5117188"></circle>
+          <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+              <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+              <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+              <feColorMatrix values="0 0 0 0 0.2   0 0 0 0 0.2   0 0 0 0 0.2  0 0 0 0.7 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+              <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                  <feMergeNode in="SourceGraphic"></feMergeNode>
+              </feMerge>
+          </filter>
+      </defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+          <g id="icon_100x100" sketch:type="MSArtboardGroup">
+              <g id="Oval-1" sketch:type="MSLayerGroup" transform="translate(0.488281, 0.488281)" filter="url(#filter-2)">
+                  <g>
+                      <use fill="#9D261D" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                      <use fill="url(#radialGradient-1)" xlink:href="#path-3"></use>
+                  </g>
+              </g>
+              <text id="λ" fill="white" filter="url(#filter-4)" sketch:type="MSTextLayer" font-family="Helvetica" font-size="78.125" font-weight="bold">
+                  <tspan x="28.3203125" y="76.4882812" fill="#FFFFFF">λ</tspan>
+              </text>
+          </g>
+      </g>
+  </svg>
+</a>
