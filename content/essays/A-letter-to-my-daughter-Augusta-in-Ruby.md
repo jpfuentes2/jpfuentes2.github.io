@@ -7,8 +7,9 @@ tags:
 ---
 
 I wanted to creatively express my affection for my daughter, Augusta, in a way I know best. I chose the programmng language Ruby for its flexibility and elegance. My hope is to introduce her to its boundless beauty someday soon using this composition.
+<!--more-->
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 require "./love"
 
 a_letter to: Augusta do
@@ -18,11 +19,11 @@ a_letter to: Augusta do
   You.will always_be: Loved, and: Cherished
   until Infinity.ends do; Forever.(); end
 end
-{% endhighlight %}
+{{< /highlight >}}
 
 This is a real, working, program which outputs "Augusta, we &lt;3 you!" when executed. Be sure to read the [love.rb](https://github.com/jpfuentes2/a-letter-to-Augusta/blob/master/love.rb) file below which supports the letter’s syntax. I tried to keep it symmetrical and legible so that the source closely resembles the letter’s content.
 
-{% highlight ruby %}
+{{< highlight ruby >}}
 Augusta = Awesome = true and Loved = Cherished = true
 
 Infinity = (+1.0 / 0)..(-1.0 / 0)
@@ -81,4 +82,4 @@ end
 def over(and_over = Infinity); end
 
 trap :INT, :IGNORE # Forever and ever!
-{% endhighlight %}
+{{< /highlight >}}
