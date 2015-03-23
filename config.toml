@@ -4,6 +4,7 @@ publishdir = "public"
 builddrafts = false
 baseurl = "https://jacquesfuentes.com"
 canonifyurls = true
+pygmentsuseclasses = true
 
 [taxonomies]
   category = "categories"
