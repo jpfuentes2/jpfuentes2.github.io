@@ -1,9 +1,9 @@
 ---
-layout: post
 title: "Select all images in Google+ instant upload"
 date: 2012-09-15
-categories: essays
 published: true
+tags:
+  - programming
 ---
 
 If you're like me and use Google+ instant upload on your mobile device as a free image repository, then you're going to need a good way to move them around.

@@ -1,9 +1,7 @@
 ---
 excerpt: "<p>Throughout my journey, I have implemented the same algorithm, the Iterated Prisoner's Dilemma, in each language as a means to compare and contrast their styles. This exercise has helped me write idiomatic code in and reinforces my understanding of how problems are approached in each language.</p>"
-layout: post
 title: "Iterated Prisoner's Dilemma in myriad languages"
-date: 2014-10-31 08:00
-categories: essays
+date: 2014-10-31
 published: true
 tags:
   - programming

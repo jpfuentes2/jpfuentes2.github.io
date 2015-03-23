@@ -1,9 +1,9 @@
 ---
-layout: post
 title: "A letter to my daughter, Augusta, in Ruby"
-date: 2013-01-17 11:53
-categories: essays
+date: 2013-01-17
 published: true
+tags:
+  - programming
 ---
 
 I wanted to creatively express my affection for my daughter, Augusta, in a way I know best. I chose the programmng language Ruby for its flexibility and elegance. My hope is to introduce her to its boundless beauty someday soon using this composition.
