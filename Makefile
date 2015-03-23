@@ -3,9 +3,16 @@ build:
 
 clean:
 	git clean -fd ./public
+	rm -rf ./public
 
-deploy: clean build
-	git subtree push --prefix=public git@github.com:jpfuentes2/jpfuentes2.github.io.git master
+push:
+	git checkout master
+	git add ./public
+	git commit -am "Build ./public"
+	git push origin master
+
+deploy: clean build push
+	git checkout blog
 
 sass:
 	compass watch --config sass/compass.rb
@@ -13,4 +20,4 @@ sass:
 server:
 	hugo server --watch --source=./
 
-.PHONY: clean build deploy sass server
+.PHONY: clean build deploy push deploy_branch sass server
