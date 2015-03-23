@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on </title>
-    <link>http://localhost:1313/tags/programming/</link>
+    <link>http://jacquesfuentes.com/tags/programming/</link>
     <description>Recent content in Programming on </description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 31 Oct 2014 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://jacquesfuentes.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Iterated Prisoner&#39;s Dilemma in myriad languages</title>
-      <link>http://localhost:1313/2014/10/iterated-prisoners-dilemma-in-myriad-languages/</link>
+      <link>http://jacquesfuentes.com/2014/10/iterated-prisoners-dilemma-in-myriad-languages/</link>
       <pubDate>Fri, 31 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2014/10/iterated-prisoners-dilemma-in-myriad-languages/</guid>
+      <guid>http://jacquesfuentes.com/2014/10/iterated-prisoners-dilemma-in-myriad-languages/</guid>
       <description>
 
 &lt;p&gt;&lt;small&gt;
@@ -74,10 +74,10 @@ This exercise has helped me write idiomatic code in and reinforces my understand
     
     <item>
       <title>A letter to my daughter, Augusta, in Ruby</title>
-      <link>http://localhost:1313/2013/01/a-letter-to-my-daughter-augusta-in-ruby/</link>
+      <link>http://jacquesfuentes.com/2013/01/a-letter-to-my-daughter-augusta-in-ruby/</link>
       <pubDate>Thu, 17 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2013/01/a-letter-to-my-daughter-augusta-in-ruby/</guid>
+      <guid>http://jacquesfuentes.com/2013/01/a-letter-to-my-daughter-augusta-in-ruby/</guid>
       <description>&lt;p&gt;I wanted to creatively express my affection for my daughter, Augusta, in a way I know best. I chose the programmng language Ruby for its flexibility and elegance. My hope is to introduce her to its boundless beauty someday soon using this composition.&lt;/p&gt;
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span class=&#34;nb&#34;&gt;require&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;quot;./love&amp;quot;&lt;/span&gt;
@@ -159,10 +159,10 @@ This exercise has helped me write idiomatic code in and reinforces my understand
     
     <item>
       <title>Select all images in Google&#43; instant upload</title>
-      <link>http://localhost:1313/2012/09/select-all-images-in-google-plus-instant-upload/</link>
+      <link>http://jacquesfuentes.com/2012/09/select-all-images-in-google-plus-instant-upload/</link>
       <pubDate>Sat, 15 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/2012/09/select-all-images-in-google-plus-instant-upload/</guid>
+      <guid>http://jacquesfuentes.com/2012/09/select-all-images-in-google-plus-instant-upload/</guid>
       <description>&lt;p&gt;If you&amp;rsquo;re like me and use Google+ instant upload on your mobile device as a free image repository, then you&amp;rsquo;re going to need a good way to move them around.&lt;/p&gt;
 
 &lt;p&gt;Perhaps I’m blind or an idiot, but, I have not found a UI for selecting or moving all images in the instant upload album. This feature is &lt;em&gt;critical&lt;/em&gt; when you have 900 images and your wife is demanding &lt;strong&gt;immediate&lt;/strong&gt; access to them to fullfill her Facebook addiction.&lt;/p&gt;
