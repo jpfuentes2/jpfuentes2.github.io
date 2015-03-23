@@ -1,6 +1,6 @@
           <div class="posts-spacer">
             <ul class="posts">
-              {{ range first 5 .Data.Pages }}
+              {{ range .Data.Pages }}
                 <li>
                   <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                   <time datetime="{{ .Date }}" pubdate>{{ .Date.Format "January, 2006" }}</time>
