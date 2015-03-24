@@ -6,6 +6,7 @@ clean:
 
 deploy: clean build
 	cd public
+	git status
 	git add .
 	git commit -am "Deploying new public build"
 	git push origin master
