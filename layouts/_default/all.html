@@ -41,7 +41,7 @@
         <header>
           <h1>
             {{ .Title }}
-            <time datetime="{{ .Date }}">{{ .Date.Format "January, 2006" }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02T15:04:05.999999-07:00" }}">{{ .Date.Format "January, 2006" }}</time>
           </h1>
         </header>
         {{ .Content }}

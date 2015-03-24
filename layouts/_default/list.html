@@ -3,7 +3,7 @@
               {{ range .Data.Pages }}
                 <li>
                   <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                  <time datetime="{{ .Date }}" pubdate>{{ .Date.Format "January, 2006" }}</time>
+                  <time datetime="{{ .Date.Format "2006-01-02T15:04:05.999999-07:00" }}">{{ .Date.Format "January, 2006" }}</time>
                   {{ .Summary }}
                 </li>
               {{ end }}
