@@ -5,10 +5,14 @@ clean:
 	git clean -fd ./public
 
 deploy: clean build
-	git add ./public
-	git commit -m "Deploying new public build"
+	cd ./public
+	git add .
+	git commit -am "Deploying new public build"
+	git push origin master
+	cd ../
+	git add public
+	git commit -am "Update ./public submodule"
 	git push origin blog
-	git subtree push --prefix=public git@github.com:jpfuentes2/jpfuentes2.github.io.git master
 
 sass:
 	compass watch --config sass/compass.rb
