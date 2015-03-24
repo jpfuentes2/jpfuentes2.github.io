@@ -11,7 +11,7 @@ deploy: clean build
 	git push origin master
 	cd ../
 	git add public
-	git commit -am "Update ./public submodule"
+	git commit -m "Update ./public submodule"
 	git push origin blog
 
 sass:
