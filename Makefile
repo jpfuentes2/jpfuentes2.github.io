@@ -6,14 +6,15 @@ clean:
 
 deploy: clean build
 	cd public
+	git checkout master
 	git status
 	git add .
 	git commit -am "Deploying new public build"
 	git push origin master
 	cd ../
 	git add public
-	# git commit -m "Update ./public submodule"
-	# git push origin blog
+	git commit -m "Update ./public submodule"
+	git push origin blog
 
 sass:
 	compass watch --config sass/compass.rb
