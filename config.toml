@@ -14,5 +14,4 @@ pygmentsuseclasses = true
   tag = "tags"
 
 [params]
-  # description = "Tesla's Awesome Hugo Site"
   author = "Jacques Fuentes"
