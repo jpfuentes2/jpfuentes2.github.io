@@ -2,5 +2,5 @@
 tags:
   - x
 categories:
-  - y
+  - essays
 ---
