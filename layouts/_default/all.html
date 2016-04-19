@@ -29,9 +29,10 @@
       <nav>
         <ul>
           <li><a href="/">essays</a></li>
+          <li><a href="/projects/index.html">projects</a></li>
           <li><a href="https://github.com/jpfuentes2">code</a></li>
           <li><a href="https://twitter.com/jpfuentes2">twitter</a></li>
-          <li><a href="/about.html">about</a></li>
+          <li><a href="/about/index.html">about</a></li>
         </ul>
       </nav>
     </div>
@@ -41,7 +42,9 @@
         <header>
           <h1>
             {{ .Title }}
+            {{ if not .Date.IsZero }}
             <time datetime="{{ .Date.Format "2006-01-02T15:04:05.999999-07:00" }}">{{ .Date.Format "January, 2006" }}</time>
+            {{ end }}
           </h1>
         </header>
         {{ .Content }}
